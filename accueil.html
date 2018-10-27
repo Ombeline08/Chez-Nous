@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>"Chez Nous"</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Bienvenue "Chez Nous"!</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="#identite">Notre identité</a></li>
+        <li><a href="#boutique">Nos produits</a></li>
+        <li><a href="#salon">Nos horaires</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <img src="images/bonbons.jpg" alt="New York">
+        <div class="carousel-caption">
+          <h1>"CHEZ NOUS"</h1>
+          <p>Les bonbons depuis plus de 50 ans</p>
+        </div>      
+    </div>
+</div>
+
+<!-- Container (Identité Section) -->
+<div id="identite" class="container text-center">
+  <h3>NOTRE IDENTITE</h3>
+  <p><em>We love sweets!</em></p>
+  <p>Créé en 1879, "CHEZ NOUS" vous accueille au sein de son salon de chocolats chauds et de sa boutique de bonbons. Venez déguster nos traditionnelles gauffres en chocolat autour d'une bonne boisson traditionnelle.</p>
+  <br>
+</div>
+ 
+
+<!-- Container (Boutique Section) -->
+<div id="boutique" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">NOS PRODUITS</h3>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/dragibus.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Dragibus</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/crocodile.jpg" alt="New York" width="400" height="300">
+          <p><strong>Crocodiles</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/fraisetagada.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>Fraises Tagada</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Bonbons</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> 1€/500g</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Adresse de livraison</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Payer 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Annuler
+          </button>
+          <p>Need <a href="#">Aide</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Identité Section) -->
+<div id="salon" class="container text-center">
+  <h3>NOS HORAIRES D'OUVERTURE</h3>
+  <p>Lundi: 8h-20h<br>Mardi: 9h-21h<br>Mercredi: 9h-21h<br>Jeudi: 8h-20h<br>Vendredi: 8h-20h<br>Samedi: 10h-22h<br>Dimanche: 14h-19h<br></p>
+  <br>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+
+<div id="contact" class="bg-1">
+  <div class="container">
+  <h3 class="text-center">Contacts</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="text-center">
+      <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp&nbsp  Paris, France</p>
+      <p><span class="glyphicon glyphicon-phone"></span>&nbsp&nbsp  Phone: +06 56575757</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp Email: bonbons@mail.com</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
